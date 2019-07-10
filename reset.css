@@ -1,9 +1,9 @@
 *, *::before, *::after {
-    position: relative; /* make absolutely positioned elements relative to their parent by default */
-    min-width: 0; /* prevent flex items from overflowing horizontally */
-    min-height: 0; /* prevent flex items from overflowing vertically */
-    background-position: center center;
-    background-repeat: no-repeat;
+  position: relative; /* make absolutely positioned elements relative to their parent by default */
+  min-width: 0; /* prevent flex items from overflowing horizontally */
+  min-height: 0; /* prevent flex items from overflowing vertically */
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 /* remove default styles on form elements */
@@ -11,40 +11,40 @@ button,
 input,
 select,
 textarea {
-    border-radius: 0; /* for iOS */
-    background-color: transparent;
-    font: inherit;
-    text-align: inherit;
-    text-transform: inherit;
-    letter-spacing: inherit;
+  border-radius: 0; /* for iOS */
+  background-color: transparent;
+  font: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
 }
 
 /* fix issue where changing the background color of a `select` makes options unreadable on Windows */
 select option {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 svg:not(:root) {
-    overflow: visible; /* reset UA stylesheet’s `overflow: hidden` to prevent clipping */
+  overflow: visible; /* reset UA stylesheet’s `overflow: hidden` to prevent clipping */
 }
 
 small {
-    font-size: inherit; /* reset UA stylesheet’s `font-size: smaller` */
+  font-size: inherit; /* reset UA stylesheet’s `font-size: smaller` */
 }
 
 cite, var, address, dfn {
-    font-style: inherit; /* reset UA stylesheet’s `font-style: italic` */
+  font-style: inherit; /* reset UA stylesheet’s `font-style: italic` */
 }
 
 hr {
-    margin: 0; /* reset UA stylesheet’s `margin-top` and `margin-bottom` of `0.5em` */
+  margin: 0; /* reset UA stylesheet’s `margin-top` and `margin-bottom` of `0.5em` */
 }
 
 th, td {
-    padding: 0; /* remove the default 1px padding in some browsers */
+  padding: 0; /* remove the default 1px padding in some browsers */
 }
 
 [hidden] {
-    display: none !important; /* make sure this is not overridden by utilities */
+  display: none !important; /* make sure this is not overridden by utilities */
 }

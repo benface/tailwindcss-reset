@@ -37,10 +37,6 @@ cite, var, address, dfn {
   font-style: inherit; /* reset UA stylesheet’s `font-style: italic` */
 }
 
-hr {
-  margin: 0; /* reset UA stylesheet’s `margin-top` and `margin-bottom` of `0.5em` */
-}
-
 th, td {
   padding: 0; /* remove the default 1px padding in some browsers */
 }

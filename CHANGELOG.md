@@ -8,7 +8,7 @@ and this project mostly adheres to [Semantic Versioning](https://semver.org/spec
 ## [1.0.1] - 2019-09-02
 
 ### Removed
-- Removed `hr`’s margin reset since it is now built in to Tailwind
+- Removed `hr`’s margin reset since it is now built into Tailwind
 
 ## [1.0.0] - 2019-07-10
 

@@ -11,7 +11,7 @@ button,
 input,
 select,
 textarea {
-  border-radius: 0; /* for iOS */
+  border-radius: 0; /* remove the default border radius set by Safari on iOS */
   background-color: transparent;
   font: inherit;
   text-align: inherit;
@@ -38,7 +38,7 @@ cite, var, address, dfn {
 }
 
 th, td {
-  padding: 0; /* remove the default 1px padding in some browsers */
+  padding: 0; /* remove the default 1px padding set by some browsers */
 }
 
 [hidden] {

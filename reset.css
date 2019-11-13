@@ -6,6 +6,12 @@
   background-repeat: no-repeat;
 }
 
+/* repeat these declarations with more specificity to override Preflight's button background reset */
+button {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 /* remove default styles on form elements */
 button,
 input,

@@ -9,7 +9,7 @@ const generatePluginCss = () => {
     tailwindcss({
       corePlugins: false,
       plugins: [
-        resetPlugin(),
+        resetPlugin,
       ],
     })
   )

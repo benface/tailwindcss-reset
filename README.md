@@ -10,14 +10,14 @@ npm install @benface/tailwindcss-reset
 
 ```js
 // tailwind.config.js
-{
+module.exports = {
   corePlugins: {
     preflight: true, /* the plugin extends Preflight so make sure it is not disabled */
   },
   plugins: [
     require('@benface/tailwindcss-reset'),
   ],
-}
+};
 ```
 
 ## What it does

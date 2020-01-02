@@ -2,14 +2,8 @@
   position: relative; /* make absolutely positioned elements relative to their parent by default */
   min-width: 0; /* prevent flex items from overflowing horizontally */
   min-height: 0; /* prevent flex items from overflowing vertically */
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-/* repeat these declarations with more specificity to override Preflight's button background reset */
-button {
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-position: center center; /* better default than 0% 0% */
+  background-repeat: no-repeat; /* better default than repeat */
 }
 
 /* remove default styles on form elements */

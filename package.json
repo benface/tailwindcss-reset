@@ -1,6 +1,6 @@
 {
   "name": "@benface/tailwindcss-reset",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Opinionated CSS reset to apply on top of Tailwind CSS’s Preflight",
   "author": "Benoît Rouleau <benoit.rouleau@icloud.com>",
   "license": "ISC",
@@ -16,9 +16,9 @@
   },
   "devDependencies": {
     "github-release-from-changelog": "^2.1.0",
-    "jest": "^24.9.0",
+    "jest": "^25.1.0",
     "jest-matcher-css": "^1.1.0",
     "release-it": "^12.4.3",
-    "tailwindcss": "1.2.0-canary.2"
+    "tailwindcss": "1.2.0"
   }
 }

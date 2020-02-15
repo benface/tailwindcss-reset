@@ -6,6 +6,11 @@
   background-repeat: no-repeat; /* better default than repeat */
 }
 
+/* make `text-align: inherit` work properly in the following rules */
+body {
+  text-align: left;
+}
+
 /* remove default styles on form elements */
 button,
 input,
@@ -39,6 +44,11 @@ cite, var, address, dfn {
 
 th, td {
   padding: 0; /* remove the default 1px padding set by some browsers */
+}
+
+th {
+  font-weight: inherit; /* reset UA stylesheet’s `font-weight: bold` */
+  text-align: inherit; /* reset UA stylesheet’s `text-align: center` */
 }
 
 [hidden] {

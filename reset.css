@@ -31,7 +31,7 @@ select option {
   color: black;
 }
 
-/* undo Normalize rule that re-enables the Firefox dotted outline */
+/* undo Normalize rule that re-enables the dotted outline in Firefox */
 button:-moz-focusring,
 [type='button']:-moz-focusring,
 [type='reset']:-moz-focusring,

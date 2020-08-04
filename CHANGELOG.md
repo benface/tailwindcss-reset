@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project mostly adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2020-08-04
+
+### Added
+- Added a rule to remove dotted outline in Firefox
+
+### Fixed
+- Fixed the bad `text-align` default for RTL languages (from `left` to `start`)
+
 ## [2.0.1] - 2020-02-14
 
 ### Added
@@ -32,7 +40,8 @@ and this project mostly adheres to [Semantic Versioning](https://semver.org/spec
 
 Initial release
 
-[Unreleased]: https://github.com/benface/tailwindcss-reset/compare/v2.0.1...HEAD
+[Unreleased]: https://github.com/benface/tailwindcss-reset/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/benface/tailwindcss-reset/compare/v2.0.1...v2.1.0
 [2.0.1]: https://github.com/benface/tailwindcss-reset/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/benface/tailwindcss-reset/compare/v1.0.2...v2.0.0
 [1.0.2]: https://github.com/benface/tailwindcss-reset/compare/v1.0.1...v1.0.2

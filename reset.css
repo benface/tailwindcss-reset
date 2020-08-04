@@ -31,6 +31,14 @@ select option {
   color: black;
 }
 
+/* undo Normalize rule that re-enables the Firefox dotted outline */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 0;
+}
+
 svg:not(:root) {
   overflow: visible; /* reset UA stylesheet’s `overflow: hidden` to prevent clipping */
 }

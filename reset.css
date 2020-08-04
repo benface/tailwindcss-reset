@@ -9,6 +9,7 @@
 /* make `text-align: inherit` work properly in the following rules */
 body {
   text-align: left;
+  text-align: start;
 }
 
 /* remove default styles on form elements */

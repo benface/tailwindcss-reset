@@ -22,7 +22,7 @@ input,
 select,
 textarea {
   display: block; /* override UA stylesheet’s `display: inline-block` */
-  /* make all the text properties inherit like they normally do */
+  /* make the inheritable text properties actually inherit */
   color: inherit;
   font: inherit;
   text-align: inherit;

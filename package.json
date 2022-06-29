@@ -1,6 +1,6 @@
 {
   "name": "@benface/tailwindcss-reset",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Opinionated CSS reset to apply on top of Tailwind CSS’s Preflight",
   "author": "Benoît Rouleau <benoit.rouleau@icloud.com>",
   "license": "ISC",

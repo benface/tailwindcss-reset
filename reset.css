@@ -1,63 +1,85 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   position: relative; /* make absolutely positioned elements relative to their parent by default */
+  margin: 0;
   min-width: 0; /* prevent flex items from overflowing horizontally */
   min-height: 0; /* prevent flex items from overflowing vertically */
-  background-position: center center; /* better default than 0% 0% */
-  background-repeat: no-repeat; /* better default than repeat */
+  padding: 0;
+  border-width: 0;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: none;
+  background-position: center center; /* better default than `0% 0%` */
+  background-repeat: no-repeat; /* better default than `repeat` */
 }
 
-/* make `text-align: inherit` work properly in the following rules */
-body {
-  text-align: left;
-  text-align: start;
+html {
+  text-align: left; /* make `text-align: inherit` work properly in subsequent rules */
 }
 
-/* remove default styles on form elements */
 button,
 input,
 select,
 textarea {
-  border-radius: 0; /* remove the default border radius set by Safari on iOS */
-  background-color: transparent;
+  display: block; /* override UA stylesheet’s `display: inline-block` */
+  /* make all the text properties inherit like they normally do */
+  color: inherit;
   font: inherit;
   text-align: inherit;
   text-transform: inherit;
   letter-spacing: inherit;
 }
 
-/* fix issue where changing the background color of a `select` makes options unreadable on Windows */
-select option {
-  background-color: white;
-  color: black;
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+[type="file"],
+[type="file"]::-webkit-file-upload-button {
+  appearance: none; /* override Preflight’s `-webkit-appearance: button` */
 }
 
-/* undo Normalize rule that re-enables the dotted outline in Firefox */
-button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
-  outline: 0;
+svg {
+  overflow: visible; /* override UA stylesheet’s `overflow: hidden`, to prevent clipping the edges of `svg` elements */
 }
 
-svg:not(:root) {
-  overflow: visible; /* reset UA stylesheet’s `overflow: hidden` to prevent clipping */
+label {
+  display: block; /* override UA stylesheet’s `display: inline` */
+}
+
+summary {
+  display: block; /* override Preflight’s `display: list-item` */
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: inherit; /* override UA stylesheet’s `font-family: monospace` and Preflight’s `theme('fontFamily.mono')` */
+}
+
+address,
+cite,
+dfn,
+var {
+  font-style: inherit; /* override UA stylesheet’s `font-style: italic` */
 }
 
 small {
-  font-size: inherit; /* reset UA stylesheet’s `font-size: smaller` */
+  font-size: inherit; /* override UA stylesheet’s `font-size: smaller` and Preflight’s `font-size: 80%` */
 }
 
-cite, var, address, dfn {
-  font-style: inherit; /* reset UA stylesheet’s `font-style: italic` */
-}
-
-th, td {
-  padding: 0; /* remove the default 1px padding set by some browsers */
+table {
+  border-spacing: 0; /* override UA stylesheet’s `border-spacing: 2px`, if `border-separate` is used */
 }
 
 th {
-  font-weight: inherit; /* reset UA stylesheet’s `font-weight: bold` */
-  text-align: inherit; /* reset UA stylesheet’s `text-align: center` */
+  font-weight: inherit; /* override UA stylesheet’s `font-weight: bold` */
+
+  &:not([align]) {
+    text-align: inherit; /* override UA stylesheet’s `text-align: center` */
+  }
 }
 
 [hidden] {

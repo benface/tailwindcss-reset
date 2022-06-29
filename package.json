@@ -11,12 +11,11 @@
     "test": "jest",
     "release": "f(){ release-it $1 && github-release-from-changelog ;};f"
   },
-  "dependencies": {},
   "devDependencies": {
     "github-release-from-changelog": "^2.1.1",
-    "jest": "^26.2.2",
+    "jest": "^28.1.1",
     "jest-matcher-css": "^1.1.0",
-    "release-it": "^13.6.6",
-    "tailwindcss": "1.6.2"
+    "release-it": "^15.1.1",
+    "tailwindcss": "3.1.4"
   }
 }

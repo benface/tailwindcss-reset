@@ -38,6 +38,14 @@ button,
 [type="file"],
 [type="file"]::-webkit-file-upload-button {
   appearance: none; /* override Preflight’s `-webkit-appearance: button` */
+  cursor: pointer; /* apply Preflight’s `button { cursor: pointer }` to `input` buttons */
+}
+
+input::placeholder,
+textarea::placeholder {
+  /* override Preflight’s arbitrary placeholder color */
+  color: inherit;
+  opacity: 0.75;
 }
 
 svg {
@@ -70,18 +78,23 @@ small {
   font-size: inherit; /* override UA stylesheet’s `font-size: smaller` and Preflight’s `font-size: 80%` */
 }
 
+mark {
+  color: inherit; /* override UA stylesheet’s `color: black` */
+}
+
 table {
   border-spacing: 0; /* override UA stylesheet’s `border-spacing: 2px`, if `border-separate` is used */
 }
 
 th {
   font-weight: inherit; /* override UA stylesheet’s `font-weight: bold` */
+}
 
-  &:not([align]) {
-    text-align: inherit; /* override UA stylesheet’s `text-align: center` */
-  }
+th:not([align]),
+caption:not([align]) {
+  text-align: inherit; /* override UA stylesheet’s `text-align: center` */
 }
 
 [hidden] {
-  display: none !important; /* make sure this is not overridden by utilities */
+  display: none !important; /* make sure this cannot be overridden by utilities */
 }

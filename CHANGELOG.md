@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project mostly adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.0] - 2022-06-29
+
+### Added
+
+- Added `cursor: pointer` to all types of `input` that are buttons, for consistency with `button`
+- Overrode Preflight’s arbitrary `input` and `textarea` placeholder color with `color: inherit` and `opacity: 0.75`
+- Made `color` inherit on `mark` elements instead of being `black` by default
+- Made `text-align` inherit on `caption` elements instead of being `center` by default
+
+Thank you so much to Sophia Michelle Andren for this release’s inspiration ❤️
+
 ## [3.0.0] - 2022-06-29
 
 ### Changed
@@ -53,7 +64,8 @@ and this project mostly adheres to [Semantic Versioning](https://semver.org/spec
 
 Initial release
 
-[unreleased]: https://github.com/benface/tailwindcss-reset/compare/v3.0.0...HEAD
+[unreleased]: https://github.com/benface/tailwindcss-reset/compare/v3.1.0...HEAD
+[3.1.0]: https://github.com/benface/tailwindcss-reset/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/benface/tailwindcss-reset/compare/v2.1.0...v3.0.0
 [2.1.0]: https://github.com/benface/tailwindcss-reset/compare/v2.0.1...v2.1.0
 [2.0.1]: https://github.com/benface/tailwindcss-reset/compare/v2.0.0...v2.0.1

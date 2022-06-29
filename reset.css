@@ -6,7 +6,6 @@
   min-width: 0; /* prevent flex items from overflowing horizontally */
   min-height: 0; /* prevent flex items from overflowing vertically */
   padding: 0;
-  border-width: 0;
   border-radius: 0;
   background-color: transparent;
   background-image: none;
